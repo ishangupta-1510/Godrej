@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div
-      className="fixed flex py-5 px-24 bg-white z-10"
+      className="fixed flex z-12 py-5 px-24 bg-white z-10"
       style={{ width: "100%" }}
     >
       <div className="absolute py-2">
