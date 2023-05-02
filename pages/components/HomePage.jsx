@@ -2,7 +2,7 @@ import React from "react";
 
 const HomePage = () => (
   <div
-    className="h-[450px] xl:h-screen py-10 bg-no-repeat"
+    className="h-[450px] md:h-[600px] xl:h-screen py-10 bg-no-repeat relative -z-10"
     style={{
       background:
         "linear-gradient(90.15deg, #3F535E 7.47%, rgba(63, 83, 94, 0) 92.56%), url(/banner.png)",
@@ -11,24 +11,26 @@ const HomePage = () => (
     }}
   >
     <div
-      className="absolute top-1/2 px-16 -translate-y-1/2"
+      className="top-1/2 px-16 -translate-y-1/2"
       style={{ position: "relative" }}
     >
-      <h1 className="text-white font-montserrat font-bold text-2xl xl:text-4xl md:text-5xl lg:text-6xl leading-relaxed">
-        Godrej Splendour
-      </h1>
-      <h1 className="mt-1 xl:mt-6 text-white font-montserrat font-bold text-2xl xl:text-4xl md:text-5xl lg:text-6xl leading-relaxed">
-        #ELEVATE
-      </h1>
-      <p className="text-white font-karla font-bold text-1xl md:text-xl lg:text-2xl mt-4">
-        Starts @ 74.99 LAKHS
-      </p>
-      <p className="text-white font-work-sans font-light text-sm md:text-lg lg:text-xl mt-4">
-        Luxury 1, 2 &amp; 3 BHK apartments by Godrej Group in
-      </p>
-      <p className="font-bold text-white font-work-sans text-sm py-1 md:text-lg lg:text-xl">
-        Whitefield, Bangalore East
-      </p>
+      <div className="flex flex-col justify-center content-center text-center xl:text-left">
+        <h1 className="text-white font-montserrat font-bold text-2xl xl:text-4xl md:text-5xl lg:text-6xl leading-relaxed">
+          Godrej Splendour
+        </h1>
+        <h1 className="mt-1 xl:mt-6 text-white font-montserrat font-bold text-2xl xl:text-4xl md:text-5xl lg:text-6xl leading-relaxed">
+          #ELEVATE
+        </h1>
+        <p className="text-white font-karla font-bold text-1xl md:text-xl lg:text-2xl mt-4">
+          Starts @ 74.99 LAKHS
+        </p>
+        <p className="text-white font-work-sans font-light text-sm md:text-lg lg:text-xl mt-4">
+          Luxury 1, 2 &amp; 3 BHK apartments by Godrej Group in
+        </p>
+        <p className="font-bold text-white font-work-sans text-sm py-1 md:text-lg lg:text-xl">
+          Whitefield, Bangalore East
+        </p>
+      </div>
       <div className="mt-6">
         <button className="hidden xl:inline-block w-44 h-14 mr-4 mb-4 text-white font-bold bg-amber-500 rounded-lg">
           CONTACT US

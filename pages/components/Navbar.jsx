@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="z-15 fixed flex z-12 py-5 px-8 bg-white z-15"
+      className=" fixed  z-15 flex  py-5 px-8 bg-white "
       style={{ width: "100%" }}
     >
       <div className="absolute py-2">
@@ -25,7 +25,7 @@ const Navbar = () => {
           <ul
             className={`${
               showMenu ? "py-16 flex flex-col items-center" : "hidden"
-            } xl:flex xl:space-x-6 py-9 font-work-sans text-gray-700`}
+            } xl:flex xl:space-x-6 py-9 xl:py-1 font-work-sans text-gray-700`}
           >
             <li>
               <Link href="/">OVERVIEW</Link>

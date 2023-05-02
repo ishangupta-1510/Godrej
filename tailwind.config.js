@@ -16,10 +16,10 @@ module.exports = {
         sm: "320px",
       },
       width: {
-        sm: "80vw",
+        sm: "100vw",
       },
       height: {
-        sm: "320px",
+        sm: "100vw",
       },
     },
   },

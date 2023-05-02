@@ -25,17 +25,7 @@ const Overview = () => {
         </div>
       </div>
 
-      <div className="xl:justify-center left-8 absolute w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
-        <div
-          className="z-8 justify-center flex w-sm h-sm bg-sm xl:w-1/2 absolute top-[480px]"
-          style={{
-            background: "url(building.png)",
-            backgroundRepeat: "no-repeat",
-            filter:
-              "drop-shadow(8px 4px 10px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-            borderRadius: "20px",
-          }}
-        ></div>
+      <div className="justify-center items-center xl:justify-center content-center absolute w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
         {/* <div
           className="z-5 xl:w-1/2 absolute"
           style={{
@@ -47,6 +37,9 @@ const Overview = () => {
             backgroundPosition: "120px 40px",
           }}
         ></div> */}
+      </div>
+      <div>
+        <img src="building.png" alt="" />
       </div>
     </div>
   );
