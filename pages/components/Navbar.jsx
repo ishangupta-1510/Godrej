@@ -10,14 +10,14 @@ const Navbar = () => {
 
   return (
     <div
-      className="z-15 fixed flex z-12 py-5 px-24 bg-white z-15"
+      className="z-15 fixed flex z-12 py-5 px-8 bg-white z-15"
       style={{ width: "100%" }}
     >
       <div className="absolute py-2">
         <img
           src="/godrej-logo.png"
           alt="Godrej"
-          className="w-50 h-50 object-contain"
+          className="w-32 h-50 object-contain"
         />
       </div>
       <nav className="flex mx-auto">
@@ -25,7 +25,7 @@ const Navbar = () => {
           <ul
             className={`${
               showMenu ? "py-16 flex flex-col items-center" : "hidden"
-            } xl:flex xl:space-x-6 py-2 font-work-sans text-gray-700`}
+            } xl:flex xl:space-x-6 py-9 font-work-sans text-gray-700`}
           >
             <li>
               <Link href="/">OVERVIEW</Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
       </nav>
       <button
-        className="xl:hidden inline-block w-12 h-12 mr-[-60px] text-white font-bold bg-amber-500 rounded-lg"
+        className="xl:hidden inline-block w-12 h-12 mr-[-10px] text-white font-bold bg-amber-500 rounded-lg"
         onClick={toggleMenu}
       >
         {showMenu ? "X" : "☰"}

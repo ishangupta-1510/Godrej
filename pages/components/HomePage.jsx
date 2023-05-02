@@ -2,7 +2,7 @@ import React from "react";
 
 const HomePage = () => (
   <div
-    className="h-[600px] xl:h-screen py-10 bg-no-repeat"
+    className="h-[450px] xl:h-screen py-10 bg-no-repeat"
     style={{
       background:
         "linear-gradient(90.15deg, #3F535E 7.47%, rgba(63, 83, 94, 0) 92.56%), url(/banner.png)",
@@ -23,10 +23,10 @@ const HomePage = () => (
       <p className="text-white font-karla font-bold text-1xl md:text-xl lg:text-2xl mt-4">
         Starts @ 74.99 LAKHS
       </p>
-      <p className="text-white font-work-sans font-light text-1xl md:text-lg lg:text-xl mt-4">
+      <p className="text-white font-work-sans font-light text-sm md:text-lg lg:text-xl mt-4">
         Luxury 1, 2 &amp; 3 BHK apartments by Godrej Group in
       </p>
-      <p className="font-bold text-white font-work-sans text-base md:text-lg lg:text-xl">
+      <p className="font-bold text-white font-work-sans text-sm py-1 md:text-lg lg:text-xl">
         Whitefield, Bangalore East
       </p>
       <div className="mt-6">
@@ -37,15 +37,15 @@ const HomePage = () => (
           DOWNLOAD BROCHURE
         </button>
       </div>
-      <div className="absolute left-10 xl:hidden mt-6 flex flex-col">
+      <div className="absolute left-10 xl:hidden flex flex-col">
         <a href="">
-          <img src="/phone.png" alt="Phone" className="h-10 w-10 mr-4" />
+          <img src="/phone.png" alt="Phone" className="h-9 w-9 mr-4" />
         </a>
         <a href="#">
           <img
             src="/downloadicon.png"
             alt="Download"
-            className="h-10 w-10 mt-4"
+            className="h-9 w-9 mt-4"
           />
         </a>
       </div>
