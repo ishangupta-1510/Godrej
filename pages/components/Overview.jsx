@@ -2,8 +2,8 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <div className="flex flex-col relative h-screen">
-      <div className="justify-center flex flex-col px-10 xl:px-40 absolute xl:left-0 xl:w-1/2 py-10 xl:h-full">
+    <div className="flex flex-col xl:flex-row h-screen">
+      <div className="justify-center flex flex-col px-10 xl:px-40 xl:w-1/2 py-10 xl:h-full">
         <h1 className="flex justify-center text-3xl xl:text-5xl font-bold text-gray-700 font-work">
           Overview
         </h1>
@@ -25,20 +25,7 @@ const Overview = () => {
         </div>
       </div>
 
-      <div className="justify-center items-center xl:justify-center content-center absolute w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
-        {/* <div
-          className="z-5 xl:w-1/2 absolute"
-          style={{
-            background: "url(oval.png)",
-            backgroundRepeat: "no-repeat",
-            width: "700px",
-            height: "700px",
-            backgroundSize: "700px",
-            backgroundPosition: "120px 40px",
-          }}
-        ></div> */}
-      </div>
-      <div>
+      <div className="justify-center items-center xl:justify-center content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
         <img src="building.png" alt="" />
       </div>
     </div>
