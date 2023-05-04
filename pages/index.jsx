@@ -11,6 +11,7 @@ export default function Home() {
       <Navbar />
       <HomePage />
       <Overview />
+      <Entry />
     </div>
   );
 }

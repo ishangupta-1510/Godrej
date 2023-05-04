@@ -2,8 +2,8 @@ import React from "react";
 
 const Entry = () => {
   return (
-    <div className="relative h-screen flex flex-row-reverse">
-      <div className="justify-center items-center absolute w-1/2 flex left-0 h-full">
+    <div className="h-[450px] mt-32 xl:mt-40 md:h-[800px] bg-cover xl:h-screen xl:w-screen py-10 bg-no-repeat banner -z-10 relative flex xl:flex-row-reverse">
+      {/* <div className="justify-center items-center absolute w-1/2 flex left-0 h-full">
         <div
           className="z-10 absolute w-1/2"
           style={{
@@ -31,33 +31,45 @@ const Entry = () => {
             marginTop: "230px",
           }}
         ></div>
-      </div>
-      <div className="flex items-center justify-center w-1/2">
-        <div className="flex flex-col">
-          <div className="flex flex-row items-center">
+      </div> */}
+      <div className="flex xl:items-center justify-center xl:w-1/2">
+        <div className="absolute left-2 xl:relative flex xl:flex-col">
+          <div className="flex flex-col xl:flex-row items-center">
             <div
-              className="w-24 h-24 mr-6"
+              className="w-10 h-10 xl:w-24 xl:h-24 xl:mr-6"
               style={{
                 backgroundImage: "url(circle1.png)",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
               }}
             ></div>
-            <div>
-              <h1 className="text-2xl font-bold text-amber-500">Grand entry</h1>
-              <p className="text-lg text-gray-700 mt-2">
-                3 level of Podium Parking + 27 floors
-              </p>
-              <p className="text-lg text-gray-700 mt-2">
+            <div className="text-center ">
+              <h1 className="text-base xl:text-2xl font-bold text-amber-500">
+                Grand entry
+              </h1>
+              <div className="flex flex-col xl:flex-row">
+                <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                  3 level of Podium
+                </p>
+                <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                  Parking + 27 floors
+                </p>
+              </div>
+              <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
                 Entry gate with security
               </p>
-              <p className="text-lg text-gray-700 mt-2">
-                Total Land: 17.76 Acres (Phase 1 & 2)
-              </p>
+              <div className="flex flex-col xl:flex-row">
+                <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                  Total Land: 17.76 Acres
+                </p>
+                <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                  (Phase 1 & 2)
+                </p>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col mt-8">
-            <div className="flex flex-row items-center">
+          {/* <div className="flex flex-col mt-8">
+            <div className="w-10 h-10 xl:w-24 xl:h-24 xl:mr-6">
               <div
                 className="w-24 h-24 mr-4"
                 style={{
@@ -136,8 +148,8 @@ const Entry = () => {
                   Club 1 – 27300sft, club 2 – 11900sft.
                 </p>
               </div>
-            </div>
-          </div>
+            </div> 
+          </div>*/}
         </div>
       </div>
     </div>
