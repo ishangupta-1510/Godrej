@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const HomePage = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const backgrounds = ["/banner1.png", "/banner2.png", "/banner3.png"];
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setBackgroundIndex(
@@ -12,14 +13,19 @@ const HomePage = () => {
 
     return () => clearInterval(intervalId);
   }, []);
+
+  const currentBackground = backgrounds[backgroundIndex];
+
   return (
     <div
-      className="h-[450px] md:h-[600px] bg-cover xl:h-screen xl:w-screen py-10 bg-no-repeat relative banner -z-10"
+      className="h-[450px] md:h-[600px] banner xl:h-screen py-10 -z-10"
       style={{
-        backgroundRepeat: "no-repeat",
-        backgroundColor: "#fff",
-        transition: "background 2s ease-in-out",
-        background: `url(${backgrounds[backgroundIndex]})`,
+        width: "100vw",
+        backgroundSize: "100% 100%",
+        transition: "background-image 1s ease-in-out, opacity 1s ease-in-out",
+        backgroundImage: `url(${currentBackground})`,
+        backgroundPosition: "0 0",
+        animation: "scroll 30s linear infinite",
       }}
     >
       <div
@@ -75,3 +81,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+// width:100vw;background:url(/banner1.png);background-size:cover !important;transition:background width backgroundSize 2s ease-in-out

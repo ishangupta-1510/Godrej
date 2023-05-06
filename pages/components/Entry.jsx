@@ -43,7 +43,7 @@ const Entry = () => {
                 backgroundSize: "cover",
               }}
             ></div>
-            <div className="text-center ">
+            <div className="text-center xl:text-left w-32 xl:w-96 ">
               <h1 className="text-base xl:text-2xl font-bold text-amber-500">
                 Grand entry
               </h1>
@@ -51,47 +51,65 @@ const Entry = () => {
                 <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
                   3 level of Podium
                 </p>
-                <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                <p className="text-xs xl:text-lg text-gray-700 xl:ml-1 xl:mt-2">
                   Parking + 27 floors
                 </p>
               </div>
-              <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
                 Entry gate with security
               </p>
               <div className="flex flex-col xl:flex-row">
-                <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
                   Total Land: 17.76 Acres
                 </p>
-                <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
                   (Phase 1 & 2)
                 </p>
               </div>
             </div>
           </div>
-          {/* <div className="flex flex-col mt-8">
-            <div className="w-10 h-10 xl:w-24 xl:h-24 xl:mr-6">
-              <div
-                className="w-24 h-24 mr-4"
-                style={{
-                  backgroundImage: "url(circle2.png)",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                }}
-              ></div>
-              <div>
-                <h1 className="text-2xl font-bold text-amber-500 mt-4">
-                  Agile Greens
-                </h1>
-                <p className="text-lg text-gray-700 mt-2">
-                  1.65 Acres – Eco Park
-                </p>
-                <p className="text-lg text-gray-700 mt-2">
-                  4.27 Acres Green Area
-                </p>
-              </div>
+          <div className="flex px-3 xl:px-0 flex-col xl:flex-row items-center ">
+            <div
+              className="w-0.5 xl:w-0 h-24 xl:h-24 xl:mr-6"
+              style={{
+                backgroundImage: "url(line.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div>
+          <div className="flex flex-col xl:flex-row items-center">
+            <div
+              className="w-10 h-10 xl:w-24 xl:h-24 xl:mr-6"
+              style={{
+                backgroundImage: "url(circle2.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            ></div>
+            <div className="text-center xl:text-left w-32 xl:w-96 ">
+              <h1 className="text-base xl:text-2xl font-bold text-amber-500">
+                Agile Greens
+              </h1>
+              <p className="text-sm xl:text-lg text-gray-700 xl:mt-2">
+                1.65 Acres – Eco Park
+              </p>
+              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
+                4.27 Acres Green Area
+              </p>
             </div>
           </div>
-          <div className="flex flex-col justify-start items-start mt-8">
+          {/* <div className="flex mx-24 flex-col xl:flex-row items-center">
+            <div
+              className="w-0.5 xl:w-0 h-24 xl:h-24 xl:mr-6"
+              style={{
+                backgroundImage: "url(line.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div> */}
+          {/* <div className="flex flex-col justify-start items-start mt-8">
             <div className="flex flex-row items-center">
               <div
                 className="h-24 mr-4"
