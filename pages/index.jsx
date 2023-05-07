@@ -4,14 +4,16 @@ import HomePage from "./components/HomePage";
 import Overview from "./components/Overview";
 import Entry from "./components/Entry";
 import Location from "./components/Location";
-import FloorPlan from "./components/FloorPlan";
+import Amenities from "./components/Amenities";
 export default function Home() {
   return (
     <div>
       <Navbar />
       <HomePage />
       <Overview />
-      <Entry />
+      {/* <Entry /> */}
+      {/* <Location /> */}
+      <Amenities />
     </div>
   );
 }

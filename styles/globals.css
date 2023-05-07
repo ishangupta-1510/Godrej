@@ -13,10 +13,12 @@
   margin-right: 10px;
 }
 
-.banner {
-  background-repeat: no-repeat;
+.image:hover {
+  content: url("/contact.png");
 }
-
+.image1:hover {
+  content: url("/download.png");
+}
 :root {
 }
 
