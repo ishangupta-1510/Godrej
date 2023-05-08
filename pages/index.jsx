@@ -5,14 +5,16 @@ import Overview from "./components/Overview";
 import Entry from "./components/Entry";
 import Location from "./components/Location";
 import Amenities from "./components/Amenities";
+import FloorPlan from "./components/FloorPlan";
 export default function Home() {
   return (
     <div>
       <Navbar />
       <HomePage />
       <Overview />
-      {/* <Entry /> */}
-      {/* <Location /> */}
+      <Entry />
+      <Location />
+      <FloorPlan />
       <Amenities />
     </div>
   );
