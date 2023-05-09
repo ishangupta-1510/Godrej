@@ -8,6 +8,7 @@ import Amenities from "./components/Amenities";
 import FloorPlan from "./components/FloorPlan";
 import Outdoor from "./components/Outdoor";
 import Explore from "./components/Explore";
+import ContactUs from "./components/ContactUs";
 export default function Home() {
   return (
     <div>
@@ -20,6 +21,7 @@ export default function Home() {
       <Amenities />
       <Outdoor />
       <Explore />
+      <ContactUs />
     </div>
   );
 }
