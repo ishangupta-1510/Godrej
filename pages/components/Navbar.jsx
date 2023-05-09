@@ -17,8 +17,8 @@ const Navbar = () => {
         <div className="xl:py-1.5">
           <ul
             className={`${
-              showMenu ? "py-16 flex flex-col items-center" : "hidden"
-            } xl:flex xl:space-x-6 py-9 xl:py-1 font-work-sans text-gray-700`}
+              showMenu ? "pt-16 flex flex-col items-center" : "hidden"
+            } xl:flex xl:space-x-6 xl:py-1 font-work-sans text-gray-700`}
           >
             <li>
               <Link href="/">OVERVIEW</Link>
