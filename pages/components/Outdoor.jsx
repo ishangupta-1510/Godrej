@@ -11,7 +11,7 @@ const Outdoor = () => {
   };
   const currentImage = images[currentImageIndex];
   return (
-    <div>
+    <div id="Gallery">
       <div className="h-screen sm:hidden relative">
         <div className="text-center">
           <h1 className="text-xl pb-10 xl:text-5xl font-bold text-gray-700">

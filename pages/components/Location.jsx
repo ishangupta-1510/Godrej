@@ -5,7 +5,10 @@ const Location = () => {
     document.getElementById("my-section").scrollIntoView();
   };
   return (
-    <div className="relative flex top-28 xl:top-44 xl:pt-0 xl:flex-row-reverse flex-col xl:h-[500px] max-h-screen">
+    <div
+      id="Location"
+      className="relative flex top-28 xl:top-52 xl:pt-0 xl:flex-row-reverse flex-col xl:h-[500px] max-h-screen"
+    >
       <div className="py-5 xl:w-1/2">
         <h1 className="xl:absolute xl:top-0 xl:right-52 text-center text-gray-700 text-xl xl:text-4xl xl:pt-8 font-bold">
           Location
@@ -26,7 +29,7 @@ const Location = () => {
       </div>
       <div
         id="slider"
-        className="relative xl:justify-center overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide flex flex-row xl:flex-col items-center mx-6 xl:px-40 xl:w-1/2 py-10 xl:py-0 xl:h-full"
+        className="relative xl:justify-center overflow-x-scroll md:overflow-hidden scroll whitespace-nowrap scroll-smooth scrollbar-hide flex flex-row xl:flex-col items-center mx-6 xl:px-40 xl:w-1/2 py-10 xl:py-0 xl:h-full"
       >
         <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center xl:w-auto xl:h-auto">
           <div
@@ -37,28 +40,12 @@ const Location = () => {
             }}
           ></div>
           <div>
-            <div className="xl:text-left xl:w-96">
-              <h1 className="xl:text-2xl font-bold text-gray-700">
-                Grand entry
-              </h1>
-            </div>
             <div className="flex flex-col xl:flex-row">
               <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                3 level of Podium
+                Upcoming Whitefield
               </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:ml-1 xl:mt-2">
-                Parking + 27 floors
-              </p>
-            </div>
-            <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-              Entry gate with security
-            </p>
-            <div className="flex flex-col xl:flex-row">
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                Total Land: 17.76 Acres
-              </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                (Phase 1 & 2)
+              <p className="text-xs pl-1 xl:text-lg text-gray-700 xl:mt-2">
+                Metro 6 min drive time
               </p>
             </div>
           </div>
@@ -73,37 +60,21 @@ const Location = () => {
             }}
           ></div>
         </div>
-        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center w-36 h-36 xl:w-auto xl:h-auto">
+        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center xl:w-auto xl:h-auto">
           <div
-            className="w-32 h-32 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
+            className="w-10 h-10 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
             style={{
               backgroundImage: "url(pic1.png)",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
           <div>
-            <div className="xl:text-left xl:w-96">
-              <h1 className="xl:text-2xl font-bold text-gray-700">
-                Grand entry
-              </h1>
-            </div>
             <div className="flex flex-col xl:flex-row">
               <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                3 level of Podium
+                Upcoming Whitefield
               </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:ml-1 xl:mt-2">
-                Parking + 27 floors
-              </p>
-            </div>
-            <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-              Entry gate with security
-            </p>
-            <div className="flex flex-col xl:flex-row">
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                Total Land: 17.76 Acres
-              </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                (Phase 1 & 2)
+              <p className="text-xs pl-1 xl:text-lg text-gray-700 xl:mt-2">
+                Metro 6 min drive time
               </p>
             </div>
           </div>
@@ -118,37 +89,21 @@ const Location = () => {
             }}
           ></div>
         </div>
-        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center w-36 h-36 xl:w-auto xl:h-auto">
+        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center xl:w-auto xl:h-auto">
           <div
-            className="w-32 h-32 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
+            className="w-10 h-10 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
             style={{
               backgroundImage: "url(pic1.png)",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
           <div>
-            <div className="xl:text-left xl:w-96">
-              <h1 className="xl:text-2xl font-bold text-gray-700">
-                Grand entry
-              </h1>
-            </div>
             <div className="flex flex-col xl:flex-row">
               <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                3 level of Podium
+                Upcoming Whitefield
               </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:ml-1 xl:mt-2">
-                Parking + 27 floors
-              </p>
-            </div>
-            <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-              Entry gate with security
-            </p>
-            <div className="flex flex-col xl:flex-row">
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                Total Land: 17.76 Acres
-              </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                (Phase 1 & 2)
+              <p className="text-xs pl-1 xl:text-lg text-gray-700 xl:mt-2">
+                Metro 6 min drive time
               </p>
             </div>
           </div>
@@ -163,37 +118,21 @@ const Location = () => {
             }}
           ></div>
         </div>
-        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center w-36 h-36 xl:w-auto xl:h-auto">
+        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center xl:w-auto xl:h-auto">
           <div
-            className="w-32 h-32 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
+            className="w-10 h-10 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
             style={{
               backgroundImage: "url(pic1.png)",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
           <div>
-            <div className="xl:text-left xl:w-96">
-              <h1 className="xl:text-2xl font-bold text-gray-700">
-                Grand entry
-              </h1>
-            </div>
             <div className="flex flex-col xl:flex-row">
               <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                3 level of Podium
+                Upcoming Whitefield
               </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:ml-1 xl:mt-2">
-                Parking + 27 floors
-              </p>
-            </div>
-            <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-              Entry gate with security
-            </p>
-            <div className="flex flex-col xl:flex-row">
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                Total Land: 17.76 Acres
-              </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                (Phase 1 & 2)
+              <p className="text-xs pl-1 xl:text-lg text-gray-700 xl:mt-2">
+                Metro 6 min drive time
               </p>
             </div>
           </div>
@@ -208,37 +147,21 @@ const Location = () => {
             }}
           ></div>
         </div>
-        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center w-36 h-36 xl:w-auto xl:h-auto">
+        <div className="flex xl:py-3 flex-col xl:flex-row text-center xl:text-left items-center xl:w-auto xl:h-auto">
           <div
-            className="w-32 h-32 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
+            className="w-10 h-10 bg-contain bg-center xl:w-32 xl:h-20 xl:mr-6"
             style={{
               backgroundImage: "url(pic1.png)",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
           <div>
-            <div className="xl:text-left xl:w-96">
-              <h1 className="xl:text-2xl font-bold text-gray-700">
-                Grand entry
-              </h1>
-            </div>
             <div className="flex flex-col xl:flex-row">
               <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                3 level of Podium
+                Upcoming Whitefield
               </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:ml-1 xl:mt-2">
-                Parking + 27 floors
-              </p>
-            </div>
-            <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-              Entry gate with security
-            </p>
-            <div className="flex flex-col xl:flex-row">
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                Total Land: 17.76 Acres
-              </p>
-              <p className="text-xs xl:text-lg text-gray-700 xl:mt-2">
-                (Phase 1 & 2)
+              <p className="text-xs xl:text-lg pl-1 text-gray-700 xl:mt-2">
+                Metro 6 min drive time
               </p>
             </div>
           </div>

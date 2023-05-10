@@ -18,7 +18,7 @@ const Amenities = () => {
   const currentImage = images[currentImageIndex];
   const currentName = names[name];
   return (
-    <div>
+    <div id="Amenities">
       <div className="h-screen sm:hidden relative top-40">
         <div className="text-center items-center">
           <h1 className="text-xl py-10 xl:text-5xl font-bold text-gray-700">

@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.my-image {
-  width: 500px;
-  height: auto;
+.slideshowSlider {
+  transition: ease 1000ms;
 }
+
+.slide {
+  display: inline-block;
+  background-size: cover;
+}
+
+/* Buttons */
 
 .arrow {
   position: relative;
@@ -18,45 +24,6 @@
   margin-right: 10px;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slideNext {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-.h-full {
-  animation: slide 3s linear infinite;
-}
-
-.h-full:nth-child(2) {
-  animation: slideNext 3s linear infinite;
-  animation-delay: 3s; /* Delay the animation for 3 seconds */
-}
-
-.image:hover {
-  content: url("/contact.png");
-}
-.image1:hover {
-  content: url("/download.png");
-}
 :root {
 }
 

@@ -8,32 +8,53 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const handleLinkClick = (event) => {
+    event.preventDefault();
+    setShowMenu(false);
+    const targetId = event.target.getAttribute("href").substr(1);
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleContactClick = () => {
+    const contactSection = document.getElementById("ContactUs");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="fixed z-10 flex w-screen py-5 px-8 bg-white ">
+    <div className="absolute z-10 flex w-screen py-4 px-8 bg-white ">
       <nav className="flex mx-auto">
-        <div className="absolute top-8 left-8">
-          <img src="/godrej-logo.png" alt="Godrej" className="w-32 h-50" />
+        <div className="absolute top-6 left-8">
+          <img src="/godrej-logo.png" alt="Godrej" className="w-32" />
         </div>
         <div className="xl:py-1.5">
           <ul
             className={`${
               showMenu ? "pt-16 flex flex-col items-center" : "hidden"
-            } xl:flex xl:space-x-6 xl:py-1 font-work-sans text-gray-700`}
+            } xl:flex xl:space-x-36 xl:py-1 font-work-sans text-gray-700`}
           >
             <li>
-              <Link href="/">OVERVIEW</Link>
+              <Link href="#Overview" onClick={handleLinkClick}>
+                OVERVIEW
+              </Link>
             </li>
             <li>
               <Link
                 className="w-84 h-19 flex items-center justify-center"
-                href="/about"
+                href="#Location"
+                onClick={handleLinkClick}
               >
                 LOCATION
               </Link>
             </li>
             <li>
               <Link
-                href="/services"
+                href="#FloorPlan"
+                onClick={handleLinkClick}
                 className="w-50 h-19 flex items-center justify-center"
               >
                 FLOOR PLAN
@@ -41,16 +62,18 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                onClick={handleLinkClick}
                 className="w-84 h-19 flex items-center justify-center"
-                href="/blog"
+                href="#Amenities"
               >
                 AMENITIES
               </Link>
             </li>
             <li>
               <Link
+                onClick={handleLinkClick}
                 className="w-84 h-19 flex items-center justify-center"
-                href="/contact"
+                href="#Gallery"
               >
                 GALLERY
               </Link>
@@ -64,7 +87,10 @@ const Navbar = () => {
       >
         {showMenu ? "X" : "☰"}
       </button>
-      <button className="hidden xl:block w-40 h-12 mr-4 text-white font-bold bg-amber-500 rounded-lg">
+      <button
+        onClick={handleContactClick}
+        className="hidden xl:block w-40 h-12 mr-4 text-white font-bold bg-amber-500 rounded-lg"
+      >
         CONTACT US
       </button>
     </div>

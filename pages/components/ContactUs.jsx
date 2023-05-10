@@ -2,163 +2,111 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <div className="absolute text-gray-700 h-screen left-7 right-7">
-      <h1 className="text-lg text-gray-700 xl:text-3xl font-bold">
-        Contact Us
-      </h1>
-      <form className="pt-5">
-        <label className="text-xs text-gray-700  xl:text-3xl" htmlFor="name">
-          Name
-        </label>
-        <br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          className="bg-gray-100
-          h-8 w-[calc(100%-1rem)]
-          text-xs pl-2 rounded-md mt-1 border-white"
-          required
-        />
-        <br />
-
-        <label className="text-xs text-gray-700 xl:text-3xl" htmlFor="email">
-          Email:
-        </label>
-        <br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="bg-gray-100
-          h-8 w-[calc(100%-1rem)]
-          text-xs pl-2 rounded-md mt-1 border-white"
-          required
-        />
-        <br />
-
-        <label className="text-xs text-gray-700 xl:text-3xl" htmlFor="country">
-          Country:
-        </label>
-        <br />
-        <input
-          type="text"
-          id="country"
-          name="country"
-          className="bg-gray-100
-          h-8 w-[calc(100%-1rem)]
-          text-xs pl-2 rounded-md mt-1 border-white"
-          required
-        />
-        <br />
-
-        <label className="text-xs text-gray-700 xl:text-3xl" htmlFor="city">
-          City:
-        </label>
-        <br />
-        <input
-          type="text"
-          id="city"
-          name="city"
-          className="bg-gray-100
-          h-8 w-[calc(100%-1rem)]
-          text-xs pl-2 rounded-md mt-1 border-white"
-          required
-        />
-        <br />
-
-        <label className="text-xs text-gray-700 xl:text-3xl" htmlFor="mobile">
-          Mobile Number:
-        </label>
-        <br />
-        <div className="flex">
-          <input
-            type="text"
-            defaultValue={"+91"}
-            id="country-code"
-            name="country-code"
-            className="bg-gray-100 h-8 text-xs pl-2 rounded-md mt-1 w-[3rem] border-white"
-            required
-          />
-          <input
-            type="tel"
-            id="mobile"
-            name="mobile"
-            className="bg-gray-100 h-8 text-xs pl-2 rounded-md mt-1 ml-2 mr-4 w-[calc(100%-2rem)] border-white"
-            required
-          />
+    <div className="flex flex-col items-center my-16 w-full" id="contact">
+      <div className="w-2/3 flex flex-col gap-12 max-md:w-full max-md:px-4">
+        <div className="capitalize text-3xl font-bold flex justify-start items-center">
+          Contact us
         </div>
-        <br />
-
-        <label className="text-xs text-gray-700 xl:text-3xl">
-          Book Your Visit:
-        </label>
-        <br />
-        <input
-          className="form-radio checked:bg-orange-600 text-orange700"
-          type="radio"
-          id="visit-yes"
-          name="visit"
-          value="yes"
-          checked
-        />
-        <label className="ml-3" htmlFor="visit-yes">
-          Yes
-        </label>
-        <input
-          className="form-radio  checked:bg-orange-600 text-orange700 ml-10"
-          type="radio"
-          id="visit-no"
-          name="visit"
-          value="no"
-        />
-        <label className="ml-2" htmlFor="visit-no">
-          No
-        </label>
-        <br />
-        <div className="flex">
-          <div className="pt-3  pr-9 text-xs">
-            <label htmlFor="visit-time">Time of Visit:</label>
-            <br />
+        <form className="grid grid-cols-2 gap-6 max-md:flex max-md:flex-col">
+          <div className="flex flex-col gap-4">
+            <div>Name</div>
             <input
-              type="time"
-              id="visit-time"
-              name="visit-time"
-              className="bg-gray-100 text-xs rounded-md mt-1 border-white"
+              className="bg-[#F0F0F0] border-white p-3 w-[90%] rounded-lg max-md:w-full"
+              type="text"
             />
-            <br />
           </div>
-          <div className="pt-3 text-xs">
-            <label htmlFor="visit-date ">Date of Visit:</label>
-            <br />
+          <div className="flex  flex-col gap-4">
+            <div>Email ID</div>
             <input
+              className="bg-[#F0F0F0] border-white p-3 w-[90%] rounded-lg max-md:w-full"
+              type="text"
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <div>Country</div>
+            <input
+              className="bg-[#F0F0F0] border-white p-3 w-[90%] rounded-lg max-md:w-full"
+              type="text"
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <div>City</div>
+            <input
+              className="bg-[#F0F0F0] border-white p-3 w-[90%] rounded-lg max-md:w-full"
+              type="text"
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <div>Mobile Number</div>
+            <div className="flex gap-6">
+              <select
+                className="bg-[#F0F0F0] border-white p-3 w-[20%] rounded-lg max-md:w-[30%]"
+                name=""
+                id=""
+              >
+                <option value="+91">+91</option>
+              </select>
+              <input
+                className="bg-[#F0F0F0] border-white p-3 w-[60%] rounded-lg max-md:w-[70%]"
+                type="text"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="capitalize">Book your visit</div>
+            <div className="flex gap-6">
+              <div className="flex gap-2">
+                <input
+                  name="book"
+                  id="yes"
+                  type="radio"
+                  className="bg-[#F0F0F0] text-orange-400 outline-none focus:ring-transparent rounded-full border-white p-3"
+                />
+                <label for="yes">Yes</label>
+              </div>
+              <div className="flex gap-2">
+                <input
+                  name="book"
+                  id="no"
+                  type="radio"
+                  className="bg-[#F0F0F0] text-orange-400 outline-none focus:ring-transparent rounded-full border-white p-3"
+                />
+                <label for="no">No</label>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col border-white gap-4">
+            <div className="capitalize">Date for visit</div>
+            <input
+              className="bg-[#F0F0F0] border-white p-3 w-[90%] rounded-lg max-md:w-full"
               type="date"
-              id="visit-date"
-              name="visit-date"
-              className="bg-gray-100 rounded-md mt-1 text-xs border-white"
             />
-            <br />
           </div>
-        </div>
-        <div className="pt-3 w-scree">
-          <label className="text-xs flex">
-            <input type="checkbox" name="terms" required />
-            <p className="pl-3">
-              Yes, I would like to receive updates & promotions from Godrej
-              Properties Limited.
-            </p>
+          <div className="flex flex-col gap-4">
+            <div className="capitalize">time for visit</div>
+            <input
+              className="bg-[#F0F0F0] border-white p-3 w-[90%] rounded-lg max-md:w-full"
+              type="time"
+            />
+          </div>
+        </form>
+        <div className="w-full flex gap-3">
+          <input id="wa" type="checkbox" />
+          <label for="wa">
+            Yes, I would like to receive updates & promotions from Godrej
+            Properties Limited.
           </label>
-          <br />
-          <div className="w-screen flex justify-center items-center">
-            <button
-              className="border border-orange-500 rounded-lg w-32  h-8 mt-24 absolute h-30"
-              type="submit"
-            >
-              Submit
-            </button>
-          </div>
         </div>
-      </form>
+        <div className="flex justify-start gap-4">
+          <img src="/wa.png" alt="" />
+          <a className="text-[#2289b9] underline">Contact us on WhatsApp</a>
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <button className="w-fit text-[#f07f22] border-2 border-solid border-[#f07f22] py-2 px-6 rounded-xl">
+            Submit
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

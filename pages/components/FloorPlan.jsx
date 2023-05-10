@@ -3,6 +3,7 @@ import React from "react";
 const FloorPlan = () => {
   return (
     <div
+    id="FloorPlan"
       className="relative xl:h-[500px] top-40 xl:top-60 flex flex-col"
       style={{
         width: "100vw",

@@ -1,19 +1,22 @@
 import React from "react";
 
 const Overview = () => {
-  const handleScrollToSection = () => {
-    // Scroll to the section with id 'my-section'
-    document.getElementById("my-section").scrollIntoView();
-  };
+  // const handleScrollToSection = () => {
+  //   // Scroll to the section with id 'my-section'
+  //   document.getElementById("my-section").scrollIntoView();
+  // };
   return (
-    <div className="relative flex flex-col top-20 p-10 xl:flex-row xl:h-screen">
-      <div className="justify-center flex flex-col xl:px-40 xl:w-1/2 xl:h-full">
-        <h1 className="flex justify-center xl:justify-start text-xl xl:text-5xl font-bold text-gray-700 font-work">
+    <div
+      id="Overview"
+      className="relative flex flex-col ml-auto mr-auto top-20 p-10 md:flex-row xl:h-[749px]"
+    >
+      <div className="justify-center flex flex-col 2xl:px-40 md:w-1/2 xl:h-full">
+        <h1 className="flex justify-center 2xl:justify-start text-xl 2xl:text-5xl font-bold text-gray-700 font-work">
           Overview
         </h1>
         <div>
           <p
-            className="flex xl:text-left text-center xl:text-lg text-sm text-gray-700 pt-3 xl:pt-16"
+            className="flex md:text-left text-center 2xl:text-lg text-sm text-gray-700 pt-3 2xl:pt-16"
             style={{ lineHeight: "1.4" }}
           >
             #Elevate offers you premium 1, 2 & 3 BHK apartments in Bangalore
@@ -21,7 +24,7 @@ const Overview = () => {
             amenities and stunning wellness features, this well-crafted home is
             sure to make you and your family incredibly happy and healthy.
           </p>
-          <p className="flex text-center xl:text-left text-sm xl:text-lg text-gray-700 pt-4">
+          <p className="flex text-center md:text-left text-sm 2xl:text-lg text-gray-700 pt-4">
             Experience all this and more, while you relax in the lap of nature.
             A home with views endlessly green till the eyes can see, a botanical
             boulevard and outdoor working pods to make your life evergreen.
@@ -29,14 +32,20 @@ const Overview = () => {
         </div>
       </div>
 
-      <div className="relative top-10 transition duration-1000 ease-in-out transform justify-center items-center xl:justify-center hover:brightness-50 content-center xl:w-1/2 flex xl:right-0 xl:h-full">
-        <img src="building1.png" alt="" onClick={handleScrollToSection} />
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-500 ease-in-out">
+      <div className="relative md:px-4 max-w-3xl md:w-2/3 max-h-xl transition duration-1000 ease-in-out transform justify-center items-center hover:brightness-75 content-center flex lg:right-0">
+        <img
+          className="max-h-[500px] min-h-[300px] md:min-h-[450px] md:min-w-[450px] md:max-h-screen"
+          src="building.png"
+          alt=""
+          // onClick={handleScrollToSection}
+        />
+        <div className="hidden absolute max-w-xl max-h-xl xl:ml-20 mt-24 inset-0 md:flex items-center justify-center opacity-0 hover:opacity-100 transition duration-500 ease-in-out">
           <h1 className="text-white text-sm xl:text-3xl font-bold">
             Explore More...
           </h1>
         </div>
       </div>
+      <div className="relative"></div>
     </div>
   );
 };
