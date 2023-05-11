@@ -13,7 +13,7 @@ const Overview = () => {
           alt=""
           onClick={handleScrollToSection}
         />
-        <div className="absolute inset-0 mb-32 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-500 ease-in-out">
+        <div className="absolute inset-0 ml-10 pt-10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-500 ease-in-out">
           <h1 className="text-white text-sm lg:text-3xl font-bold">
             Explore More...
           </h1>
