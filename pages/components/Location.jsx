@@ -13,18 +13,13 @@ const Location = () => {
         <h1 className="xl:absolute xl:top-0 xl:right-52 text-center text-gray-700 text-xl xl:text-4xl xl:pt-8 font-bold">
           Location
         </h1>
-        <div className="xl:pt-20 pt-10 transition pr-5 pl-5 xl:pr-0 xl:pl-0 duration-1000 ease-in-out transform justify-center items-center xl:justify-center hover:brightness-50 content-center w-sm xl:w-[100%] flex xl:right-0 xl:h-full">
+        <div className="xl:pt-20 pt-10 transition pr-5 pl-5 xl:pr-0 xl:pl-0 duration-1000 ease-in-out transform justify-center items-center xl:justify-center content-center w-sm xl:w-[100%] flex xl:right-0 xl:h-full">
           <img
             className=""
             src="location1.png"
             alt=""
             onClick={handleScrollToSection}
           />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-500 ease-in-out">
-            <h1 className="text-white text-sm xl:text-3xl font-bold">
-              Explore More...
-            </h1>
-          </div>
         </div>
       </div>
       <div

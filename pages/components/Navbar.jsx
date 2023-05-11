@@ -34,11 +34,15 @@ const Navbar = () => {
         <div className="xl:py-1.5">
           <ul
             className={`${
-              showMenu ? "pt-16 flex flex-col items-center" : "hidden"
-            } xl:flex xl:space-x-36 xl:py-1 font-work-sans text-gray-700`}
+              showMenu ? "pt-16 flex flex-col items-center  " : "hidden"
+            } xl:flex  xl:space-x-20 2xl:space-x-36 xl:py-1 font-work-sans text-gray-700`}
           >
             <li>
-              <Link href="#Overview" onClick={handleLinkClick}>
+              <Link
+                className="w-84 h-19 flex items-center justify-center"
+                href="#Overview"
+                onClick={handleLinkClick}
+              >
                 OVERVIEW
               </Link>
             </li>
@@ -62,18 +66,18 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                href="#Amenities"
                 onClick={handleLinkClick}
                 className="w-84 h-19 flex items-center justify-center"
-                href="#Amenities"
               >
                 AMENITIES
               </Link>
             </li>
             <li>
               <Link
+                href="#Gallery"
                 onClick={handleLinkClick}
                 className="w-84 h-19 flex items-center justify-center"
-                href="#Gallery"
               >
                 GALLERY
               </Link>

@@ -79,18 +79,18 @@ const HomePage = () => {
             </button>
           </div>
           <div className="absolute pt-3 md:pt-10 left-10 xl:hidden flex flex-col">
-            <a href="">
+            <a href="#ContactUs">
               <img
                 src="/phone.png"
                 alt="Phone"
-                className="h-7 w-9 mr-4 image hover:w-20"
+                className="h-7 w-9 mr-4 image"
               />
             </a>
             <a href="#">
               <img
                 src="/downloadicon.png"
                 alt="Download"
-                className="h-7 w-9 mt-3 image1 hover:w-28"
+                className="h-7 w-9 mt-3 image1"
               />
             </a>
           </div>

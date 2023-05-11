@@ -34,7 +34,7 @@ const Overview = () => {
 
       <div className="relative md:px-4 max-w-3xl md:w-2/3 max-h-xl transition duration-1000 ease-in-out transform justify-center items-center hover:brightness-75 content-center flex lg:right-0">
         <img
-          className="max-h-[500px] min-h-[300px] md:min-h-[450px] md:min-w-[450px] md:max-h-screen"
+          className="max-h-[500px] min-h-[300px] md:min-h-[400px] md:min-w-[400px] md:max-h-[700px] md:max-w-screen pl-6"
           src="building.png"
           alt=""
           // onClick={handleScrollToSection}
