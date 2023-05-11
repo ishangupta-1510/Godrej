@@ -5,7 +5,7 @@ const Overview = () => {
     document.getElementById("my-section").scrollIntoView();
   };
   return (
-    <div className="min-h-[100px] max-h-[900px] z-10 :h-[749px] ml-auto mr-auto top-20 lg:top-32 relative flex lg:pt-0 justify-center content-center lg:flex-row flex-col-reverse lg:h-screen">
+    <div className="min-h-[100px] max-h-[900px] z-10 :h-[749px] ml-auto mr-auto top-20 lg:top-32 relative flex lg:pt-0 justify-center content-center lg:flex-row flex-col-reverse">
       <div className="transition max-h-[600px] lg:px-4 max-w-3xl pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center lg:items-start hover:brightness-50 content-center w-sm lg:w-1/2 flex lg:right-0">
         <img
           className=" max-h-[470px] mt-10 lg:max-h-screen min-h-[300px] pr-10  pl-4 md:pr-0 md:pl-0 lg:min-h-[500px] lg:min-w-[500px]"
