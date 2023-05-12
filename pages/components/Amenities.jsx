@@ -136,7 +136,7 @@ const Amenities = () => {
             </div>
           </div>
           <img
-            className="absolute z-0 hidden xl:block max-h-[280px] right-24 top-[3650px]"
+            className="absolute z-0 hidden xl:block max-h-[280px] right-24 top-[3720px]"
             src="sun0.png"
             alt=""
           />
