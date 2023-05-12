@@ -1,6 +1,12 @@
 import React from "react";
 
 const FloorPlan = () => {
+  const handleContactClick = () => {
+    const contactSection = document.getElementById("ContactUs");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div>
       <div
@@ -53,7 +59,10 @@ const FloorPlan = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-transparent hover:bg-orange-500 hover:text-white text-orange-500 py-1 px-4 md:py-2 md:px-8 rounded-lg mt-6 border-2 border-orange-500">
+            <button
+              onClick={handleContactClick}
+              className="bg-transparent hover:bg-orange-500 hover:text-white text-orange-500 py-1 px-4 md:py-2 md:px-8 rounded-lg mt-6 border-2 border-orange-500"
+            >
               Contact Us
             </button>
           </div>
@@ -85,7 +94,10 @@ const FloorPlan = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-transparent hover:bg-orange-500 hover:text-white text-orange-500 py-1 px-4 md:py-2 md:px-8 rounded-lg mt-6 border-2 border-orange-500">
+            <button
+              onClick={handleContactClick}
+              className="bg-transparent hover:bg-orange-500 hover:text-white text-orange-500 py-1 px-4 md:py-2 md:px-8 rounded-lg mt-6 border-2 border-orange-500"
+            >
               Contact Us
             </button>
           </div>
@@ -117,7 +129,10 @@ const FloorPlan = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-transparent hover:bg-orange-500 hover:text-white text-orange-500 py-1 px-4 md:py-2 md:px-8 rounded-lg mt-6 border-2 border-orange-500">
+            <button
+              onClick={handleContactClick}
+              className="bg-transparent hover:bg-orange-500 hover:text-white text-orange-500 py-1 px-4 md:py-2 md:px-8 rounded-lg mt-6 border-2 border-orange-500"
+            >
               Contact Us
             </button>
           </div>
