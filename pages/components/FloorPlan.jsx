@@ -4,7 +4,7 @@ const FloorPlan = () => {
   return (
     <div
       id="FloorPlan"
-      className="relative lg:h-[490px] top-10 lg:top-44 flex flex-col"
+      className="relative lg:h-[490px] lg:top-44 flex flex-col"
       style={{
         width: "100vw",
         background: "#FCFCFC",

@@ -5,10 +5,13 @@ const Overview = () => {
     document.getElementById("my-section").scrollIntoView();
   };
   return (
-    <div className="min-h-[100px]  z-10  ml-auto mr-auto pt-20 lg:top-32 relative flex lg:pt-32 justify-center content-center lg:flex-row-reverse flex-col-reverse">
-      <div className="max-h-[600px] lg:px-4 max-w-3xl pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center lg:items-start content-center w-sm lg:w-1/2 flex lg:right-0">
+    <div className="min-h-[100px]  z-10  ml-auto mr-auto mt-16 pt-24 lg:top-10 relative flex lg:pt-32 justify-center content-center lg:flex-row-reverse flex-col">
+      <div className="max-h-[600px] lg:px-4 max-w-3xl right-0 pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center lg:items-start content-center w-sm lg:w-1/2 flex lg:right-0">
+        <h1 className="absolute lg:w-screen lg:right-10 top-0 flex justify-center lg:justify-end font-bold text-xl lg:text-5xl">
+          Location
+        </h1>
         <img
-          className=" max-h-[370px] pl-4 justify-center mt-10 lg:mr-10 lg:max-h-screen min-h-[300px] pr-4  lg:pl-4 md:pr-0 md:pl-0 lg:min-h-[500px] lg:min-w-[500px]"
+          className=" max-h-[370px] pl-4 justify-center mt-16 lg:mt-20 lg:mr-10 lg:max-h-screen min-h-[300px] pr-4  lg:pl-4 md:pr-0 md:pl-0 lg:min-h-[500px] lg:min-w-[500px]"
           src="location.png"
           alt=""
           onClick={handleScrollToSection}
@@ -16,7 +19,7 @@ const Overview = () => {
       </div>
       <div
         id="slider"
-        className="max-h-[800px] z-20 mt-10  relative overflow-x-scroll scroll scroll-smooth scrollbar-hide flex flex-row lg:flex-col lg:items-center lg:w-1/2 pr-10 lg:py-0"
+        className="max-h-[800px] z-20 mt-10 lg:mt-20  relative overflow-x-scroll scroll scroll-smooth scrollbar-hide flex flex-row lg:flex-col lg:items-center lg:w-1/2 pr-10 lg:py-0"
       >
         <div className="flex lg:py-3 flex-col lg:flex-row text-center lg:text-left lg:items-center w-36 h-28 lg:w-auto lg:h-auto">
           <div
