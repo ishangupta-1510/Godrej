@@ -19,7 +19,7 @@ const Overview = () => {
       </div>
       <div
         id="slider"
-        className="max-h-[800px] z-20 mt-10 lg:mt-20  relative overflow-x-scroll scroll scroll-smooth scrollbar-hide flex flex-row lg:flex-col lg:items-center lg:w-1/2 pr-10 lg:py-0"
+        className="max-h-[800px] pl-10 mr-10 z-20 mt-10 lg:mt-20  relative overflow-x-scroll scroll scroll-smooth scrollbar-hide flex flex-row lg:flex-col lg:items-center lg:w-1/2 pr-10 lg:py-0"
       >
         <div className="flex lg:py-3 flex-col lg:flex-row text-center lg:text-left lg:items-center w-36 h-28 lg:w-auto lg:h-auto">
           <div

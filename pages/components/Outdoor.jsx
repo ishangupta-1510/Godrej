@@ -12,7 +12,7 @@ const Outdoor = () => {
   const currentImage = images[currentImageIndex];
   return (
     <div id="Gallery">
-      <div className="h-screen sm:hidden relative">
+      <div className="pt-10 sm:hidden relative">
         <div className="text-center">
           <h1 className="text-xl pb-10 xl:text-5xl font-bold text-gray-700">
             Explore the Outdoor Spaces
@@ -36,111 +36,49 @@ const Outdoor = () => {
           </div>
         </div>
       </div>
-      <div className="pl-20 pr-20 pt-20 hidden sm:block">
-        <h1 className="text-3xl font-bold mb-6 text-[#3F535E] ">
-          Explore the Outdoor Spaces
-        </h1>
-        <div>
-          <div className="flex justify-between pt-10">
-            <div className="">
-              <img
-                position="relative"
-                src="expl1.png"
-                alt="image 1"
-                width={350}
-                height={300}
-                className="rounded-md"
-              />
-            </div>
-            <div className=" brightness-100 w-92 mr-4">
-              <img
-                position="relative"
-                src="expl2.png"
-                alt="image 1"
-                width={350}
-                height={300}
-                className="rounded-md"
-              />
-            </div>
-            <div className=" brightness-100 w-92 mr-4">
-              <img
-                position="relative"
-                src="expl3.png"
-                alt="image 1"
-                width={350}
-                height={300}
-                className="rounded-md"
-              />
-            </div>
-            {/* <div className="w-1/3 mr-4">
+      <div className="hidden sm:block">
+        <div
+          class="flex flex-col items-center my-16 gap-16 max-sm:h-[80vh] relative"
+          id="gallery"
+        >
+          <div class="capitalize text-3xl font-bold flex justify-start w-5/6 items-center max-sm:justify-center max-sm:text-center">
+            Explore the outdoor spaces
+          </div>
+          <div class="hidden max-sm:flex bg-white opacity-80 p-3 rounded-full aspect-square px-5 absolute top-2/4 right-6 z-10">
+            <img class="w-[25px]" src="/arrow.svg" alt="" />
+          </div>
+          <div class="w-5/6 grid grid-cols-3 gap-6 max-sm:flex max-sm:h-full max-sm:overflow-x-scroll max-sm:px-3">
             <img
-              src="/pool1.png"
-              alt="image 2"
-              width={350}
-              height={200}
-              className="rounded-md"
+              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              src="/expl1.png"
+              alt=""
+            />
+            <img
+              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              src="/expl2.png"
+              alt=""
+            />
+            <img
+              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              src="/expl3.png"
+              alt=""
+            />
+            <img
+              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              src="/expl4.png"
+              alt=""
+            />
+            <img
+              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              src="/expl5.png"
+              alt=""
+            />
+            <img
+              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              src="/expl6.png"
+              alt=""
             />
           </div>
-          <div className="w-1/3">
-            <img
-              src="/baski1.png"
-              alt="image 3"
-              width={350}
-              height={200}
-              className="rounded-md"
-            />
-          </div> */}
-          </div>
-        </div>
-        <div className="flex justify-between pt-5">
-          <div className=" brightness-100 w-92 mr-4">
-            <img
-              position="relative"
-              src="expl4.png"
-              alt="image 1"
-              width={350}
-              height={300}
-              className="rounded-md"
-            />
-          </div>
-          <div className=" brightness-100 w-92 mr-4">
-            <img
-              position="relative"
-              src="expl5.png"
-              alt="image 1"
-              width={350}
-              height={300}
-              className="rounded-md"
-            />
-          </div>
-          <div className=" brightness-100 w-92 mr-4">
-            <img
-              position="relative"
-              src="expl6.png"
-              alt="image 1"
-              width={350}
-              height={300}
-              className="rounded-md"
-            />
-          </div>
-          {/* <div className="w-1/3 mr-4">
-            <img
-              src="/pool1.png"
-              alt="image 2"
-              width={350}
-              height={200}
-              className="rounded-md"
-            />
-          </div>
-          <div className="w-1/3">
-            <img
-              src="/baski1.png"
-              alt="image 3"
-              width={350}
-              height={200}
-              className="rounded-md"
-            />
-          </div> */}
         </div>
       </div>
     </div>
