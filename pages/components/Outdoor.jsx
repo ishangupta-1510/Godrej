@@ -44,17 +44,22 @@ const Outdoor = () => {
           <div class="capitalize text-3xl font-bold flex justify-start w-5/6 items-center max-sm:justify-center max-sm:text-center">
             Explore the outdoor spaces
           </div>
+          <img
+            className="absolute z-0 hidden xl:block 2xl:max-h-[360px] xl:max-h-[300px] left-20 xl:top-[260px] 2xl:top-[350px]"
+            src="sun2.png"
+            alt=""
+          />
           <div class="hidden max-sm:flex bg-white opacity-80 p-3 rounded-full aspect-square px-5 absolute top-2/4 right-6 z-10">
             <img class="w-[25px]" src="/arrow.svg" alt="" />
           </div>
           <div class="w-5/6 grid grid-cols-3 gap-6 max-sm:flex max-sm:h-full max-sm:overflow-x-scroll max-sm:px-3">
             <img
-              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              className="max-sm:w-full z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
               src="/expl1.png"
               alt=""
             />
             <img
-              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              className="max-sm:w-full z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
               src="/expl2.png"
               alt=""
             />
@@ -64,7 +69,7 @@ const Outdoor = () => {
               alt=""
             />
             <img
-              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+              className="max-sm:w-full z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
               src="/expl4.png"
               alt=""
             />
