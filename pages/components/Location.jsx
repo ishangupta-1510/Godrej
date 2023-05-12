@@ -6,12 +6,19 @@ const Overview = () => {
   };
   return (
     <div className="min-h-[100px]  z-10  ml-auto mr-auto mt-16 pt-10 lg:top-10 relative flex lg:pt-32 justify-center content-center lg:flex-row-reverse flex-col">
+      <img
+        className="absolute hidden xl:block max-h-[680px] top-48 right-0"
+        src="ovl.png"
+        alt=""
+        onClick={handleScrollToSection}
+      />
       <div className="max-h-[600px] lg:px-4 max-w-3xl right-0 pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center lg:items-start content-center w-sm lg:w-1/2 flex lg:right-0">
         <h1 className="absolute lg:w-screen lg:right-10 top-0 flex justify-center lg:justify-end font-bold text-xl lg:text-5xl">
           Location
         </h1>
+
         <img
-          className=" max-h-[370px] pl-4 justify-center mt-16 lg:mt-20 lg:mr-10 lg:max-h-screen min-h-[300px] pr-4  lg:pl-4 md:pr-0 md:pl-0 lg:min-h-[500px] lg:min-w-[500px]"
+          className=" max-h-[370px] z-20 pl-4 justify-center mt-16 lg:mt-20 lg:mr-10 lg:max-h-screen min-h-[300px] pr-4  lg:pl-4 md:pr-0 md:pl-0 lg:min-h-[500px] lg:min-w-[500px]"
           src="location.png"
           alt=""
           onClick={handleScrollToSection}

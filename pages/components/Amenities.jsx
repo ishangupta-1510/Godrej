@@ -83,7 +83,7 @@ const Amenities = () => {
             />
             <div className="absolute pl-5 pr-5 inset-0 flex hover:opacity-0 justify-center items-center opacity-100 transition duration-500 ease-in-out">
               <img
-                src="amph.png"
+                src="amph2.png"
                 alt=""
                 className="w-14 mr-3 sm:hidden md:block"
               />
