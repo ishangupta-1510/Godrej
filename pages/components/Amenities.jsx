@@ -30,6 +30,11 @@ const Amenities = () => {
   const currentName = names[name];
   return (
     <div id="Amenities">
+      <img
+        className="absolute z-0 hidden xl:block max-h-[280px] left-20 xl:top-[3860px] 2xl:top-[3900px]"
+        src="sun1.png"
+        alt=""
+      />
       <div className="sm:hidden relative">
         <div className="text-center items-center">
           <h1 className="text-xl py-10 xl:text-5xl font-bold text-gray-700">
@@ -110,7 +115,7 @@ const Amenities = () => {
               </h1>
             </div>
           </div>
-          <div className="transition duration-1000 ease-in-out transform brightness-50 hover:brightness-100 w-92 mr-4">
+          <div className="transition z-10 duration-1000 ease-in-out transform brightness-50 hover:brightness-100 w-92 mr-4">
             <img
               position="relative"
               src="baski1.png"
@@ -130,6 +135,11 @@ const Amenities = () => {
               </h1>
             </div>
           </div>
+          <img
+            className="absolute z-0 hidden xl:block max-h-[280px] right-24 top-[3650px]"
+            src="sun0.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
