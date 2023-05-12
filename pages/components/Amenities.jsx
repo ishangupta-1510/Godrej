@@ -4,6 +4,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const Amenities = () => {
   const images = ["car.png", "baski.png", "pool.png"];
+  const images2 = ["amph.png", "amph.png", "swim.png"];
   const names = ["AMPHITHEATRE", "BASKETBALL COURT", "SWIMMING POOL"];
 
   const [name, setName] = useState(0);
@@ -49,7 +50,7 @@ const Amenities = () => {
           <div className="absolute ml-7 w-[90%] inset-0 flex items-center justify-center brightness-100 hover:opacity-0 opacity-100 transition duration-500 ease-in-out">
             <img
               className="w-14 transition duration-1000 ease-in-out transform"
-              src="amph.png"
+              src={images2[currentImageIndex]}
               alt=""
               onLoad={handleImageLoad}
             />
