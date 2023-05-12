@@ -35,7 +35,7 @@ const Amenities = () => {
             Amenities
           </h1>
         </div>
-        <div className="transition pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center xl:justify-center brightness-50 hover:brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
+        <div className="transition pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center xl:justify-center brightness-50 md:hover:brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
           <KeyboardArrowUpIcon
             className="relative left-3"
             onClick={() =>
