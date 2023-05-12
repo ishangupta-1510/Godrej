@@ -5,10 +5,10 @@ const Overview = () => {
     document.getElementById("my-section").scrollIntoView();
   };
   return (
-    <div className="min-h-[100px] max-h-[900px] z-10 :h-[749px] ml-auto mr-auto pt-20 lg:top-32 relative flex lg:pt-32 justify-center content-center lg:flex-row-reverse flex-col-reverse">
-      <div className="transition max-h-[600px] lg:px-4 max-w-3xl pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center lg:items-start content-center w-sm lg:w-1/2 flex lg:right-0">
+    <div className="min-h-[100px]  z-10  ml-auto mr-auto pt-20 lg:top-32 relative flex lg:pt-32 justify-center content-center lg:flex-row-reverse flex-col-reverse">
+      <div className="max-h-[600px] lg:px-4 max-w-3xl pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center lg:items-start content-center w-sm lg:w-1/2 flex lg:right-0">
         <img
-          className=" max-h-[470px] mt-10 mr-10 lg:max-h-screen min-h-[300px] pr-4  pl-4 md:pr-0 md:pl-0 lg:min-h-[500px] lg:min-w-[500px]"
+          className=" max-h-[370px] justify-center mt-10 lg:mr-10 lg:max-h-screen min-h-[300px] pr-4  lg:pl-4 md:pr-0 md:pl-0 lg:min-h-[500px] lg:min-w-[500px]"
           src="location.png"
           alt=""
           onClick={handleScrollToSection}
@@ -16,9 +16,9 @@ const Overview = () => {
       </div>
       <div
         id="slider"
-        className="max-h-[600px] z-20 mt-10  relative overflow-x-scroll scroll scroll-smooth scrollbar-hide flex flex-row lg:flex-col lg:items-center lg:w-1/2 pr-10 lg:py-0"
+        className="max-h-[800px] z-20 mt-10  relative overflow-x-scroll scroll scroll-smooth scrollbar-hide flex flex-row lg:flex-col lg:items-center lg:w-1/2 pr-10 lg:py-0"
       >
-        <div className="flex lg:py-3 flex-col lg:flex-row text-center lg:text-left lg:items-center lg:w-auto lg:h-auto">
+        <div className="flex lg:py-3 flex-col lg:flex-row text-center lg:text-left lg:items-center w-36 h-28 lg:w-auto lg:h-auto">
           <div
             className="w-32 h-32 min-h-[50px] sm:min-h-[50px] max-h-[40px] lg:max-h-[100px] bg-contain bg-center 2xl:w-32 2xl:h-20 2xl:mr-6 lg:w-32 lg:h-16 lg:mr-6"
             style={{
@@ -96,7 +96,7 @@ const Overview = () => {
             }}
           ></div>
         </div>
-        <div className="flex lg:py-3 flex-col lg:flex-row text-center lg:text-left lg:items-center w-36 h-24 lg:w-auto lg:h-auto">
+        <div className="flex lg:py-3 flex-col lg:flex-row text-center lg:text-left lg:items-center w-36 h-40 lg:w-auto lg:h-auto">
           <div
             className="w-32 h-32 min-h-[50px] sm:min-h-[50px] max-h-[40px] lg:max-h-[100px] bg-contain bg-center 2xl:w-32 2xl:h-20 2xl:mr-6 lg:w-32 lg:h-16 lg:mr-6"
             style={{

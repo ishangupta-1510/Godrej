@@ -4,7 +4,7 @@ const FloorPlan = () => {
   return (
     <div
       id="FloorPlan"
-      className="relative xl:h-[490px] top-0 xl:top-44 flex flex-col"
+      className="relative lg:h-[490px] top-10 lg:top-44 flex flex-col"
       style={{
         width: "100vw",
         background: "#FCFCFC",
@@ -13,7 +13,7 @@ const FloorPlan = () => {
         padding: "2rem",
       }}
     >
-      <h1 className="text-xl xl:text-4xl text-center md:text-left pl-16 font-bold font-work text-[#3F535E] mb-4">
+      <h1 className="text-xl lg:text-4xl text-center md:text-left pl-16 font-bold font-work text-[#3F535E] mb-4">
         Floor Plan
       </h1>
       <div
