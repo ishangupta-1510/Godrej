@@ -5,7 +5,10 @@ const Overview = () => {
     document.getElementById("my-section").scrollIntoView();
   };
   return (
-    <div className="min-h-[100px]  z-10  ml-auto mr-auto mt-16 pt-10 lg:top-10 relative flex lg:pt-32 justify-center content-center lg:flex-row-reverse flex-col">
+    <div
+      id="Location"
+      className="min-h-[100px]  z-10  ml-auto mr-auto mt-16 pt-10 lg:top-10 relative flex lg:pt-32 justify-center content-center lg:flex-row-reverse flex-col"
+    >
       <img
         className="absolute hidden xl:block max-h-[680px] top-48 right-0"
         src="ovl.png"
