@@ -12,13 +12,14 @@ import ContactUs from "./components/ContactUs";
 import TestSlide from "./components/Testslide";
 import Footer from "./components/Footer";
 import Test2 from "./components/Text2";
-
+import Slideshow from "./components/Testslide";
 export default function Home() {
   return (
     <div>
       <Navbar />
       {/* <TestSlide /> */}
-      <HomePage />
+      <Slideshow />
+      {/* <HomePage /> */}
       <Overview />
       <Entry />
       {/* <Test2 /> */}

@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
-
+import Link from "next/link";
 const backgrounds = ["/banner1.png", "/banner2.png", "/banner3.png"];
 const delay = 3000;
 const HomePage = () => {
+  const handleLinkClick = (event) => {
+    event.preventDefault();
+    const targetId = "#ContactUs";
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const timeoutRef = React.useRef(null);
   function resetTimeout() {
@@ -79,13 +87,13 @@ const HomePage = () => {
             </button>
           </div>
           <div className="absolute pt-3 md:pt-10 left-10 xl:hidden flex flex-col">
-            <a href="#ContactUs">
+            <Link href="#ContactUs" onClick={handleLinkClick}>
               <img
                 src="/phone.png"
                 alt="Phone"
                 className="h-7 w-9 mr-4 image"
               />
-            </a>
+            </Link>
             <a href="#">
               <img
                 src="/downloadicon.png"

@@ -35,7 +35,7 @@ const Navbar = () => {
           <ul
             className={`${
               showMenu
-                ? "pt-16 flex pl-10 flex-col justify-center xl:hidden  "
+                ? "pt-16 flex pl-10 flex-col justify-center xl:hidden"
                 : "hidden"
             } xl:flex  xl:space-x-20 2xl:space-x-36 xl:py-1 font-work-sans text-gray-700`}
           >
