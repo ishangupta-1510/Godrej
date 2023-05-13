@@ -6,7 +6,9 @@
   transition: ease 1000ms;
 }
 
-
+.card {
+  background: var(--surface-card);
+}
 
 .slide {
   display: inline-block;
@@ -44,7 +46,7 @@
   background-color: #6a0dad;
 }
 
-.arrow {
+/* .arrow {
   position: relative;
   display: inline-block;
   width: 0;
@@ -53,6 +55,24 @@
   border-bottom: 8px solid transparent;
   border-left: 8px solid white;
   margin-right: 10px;
+} */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.left-arrow {
+  left: -30px; /* Adjust this value to position the left arrow */
+}
+
+.right-arrow {
+  right: -30px; /* Adjust this value to position the right arrow */
 }
 
 :root {

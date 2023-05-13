@@ -5,8 +5,8 @@ export class Footer extends Component {
     return (
       <div>
         <div className="bg-[#3F535E] text-white text-sm py-6 pt-16 flex flex-col gap-16">
-          <div className="flex pl-12 lg:pl-0 md:justify-around">
-            <div className="flex flex-col gap-3 items-start w-96">
+          <div className="flex pl-[10%]  lg:pl-0 justify-center md:justify-around">
+            <div className="flex flex-col justify-center gap-3 items-start w-96">
               <div className="uppercase md:text-2xl text-[#C5C5C5]">
                 Address
               </div>

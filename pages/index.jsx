@@ -17,14 +17,12 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      {/* <TestSlide /> */}
       <Slideshow />
-      {/* <HomePage /> */}
       <Overview />
       <Entry />
-      {/* <Test2 /> */}
       <Location />
       <FloorPlan />
+      {/* <Test2 /> */}
       <Amenities />
       <Outdoor />
       <Explore />

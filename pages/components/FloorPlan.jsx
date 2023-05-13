@@ -11,12 +11,10 @@ const FloorPlan = () => {
     <div>
       <div
         id="FloorPlan"
-        className="relative dm:h-[490px] dm:top-44 flex flex-col pt-[2rem] pb-[2rem] pr-[2rem] pl-[2rem] md:pl-0"
+        className="relative dm:h-[490px] dm:top-44 flex flex-col pt-[2rem] pb-[2rem] pr-[2rem] pl-[2rem] md:pl-0 cm:shadow-3xl"
         style={{
           width: "100vw",
           background: "#FCFCFC",
-          boxShadow:
-            "10px 4px 25px rgba(0, 0, 0, 0), 0px 4px 25px rgba(0, 0, 0, 0.25)",
         }}
       >
         <img

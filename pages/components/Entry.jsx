@@ -6,7 +6,7 @@ const Overview = () => {
   };
   return (
     <div className="min-h-[100px] max-h-[900px] z-10 :h-[749px] ml-auto mr-auto top-20 relative flex dm:pt-0 justify-center content-center cm:items-center dm:flex-row flex-col-reverse">
-      <div className="transition max-h-[600px] dm:px-4 max-w-3xl pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center dm:items-start hover:brightness-50 content-center w-sm dm:w-1/2 flex dm:right-0">
+      <div className="transition max-h-[600px] dm:px-4 max-w-3xl pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center dm:items-start hover:brightness-75 content-center w-sm dm:w-1/2 flex dm:right-0">
         <img
           className=" max-h-[470px] mt-10 dm:max-h-screen min-h-[300px] pr-9  pl-5 cm:pl-0 cm:pr-7 md:pr-0 md:pl-0 dm:min-h-[500px] dm:min-w-[500px]"
           src="garden.png"

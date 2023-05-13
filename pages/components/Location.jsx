@@ -1,9 +1,6 @@
 import React from "react";
 
 const Overview = () => {
-  const handleScrollToSection = () => {
-    document.getElementById("my-section").scrollIntoView();
-  };
   return (
     <div
       id="Location"
@@ -13,7 +10,6 @@ const Overview = () => {
         className="absolute hidden dm:block max-h-[580px] top-32 right-0"
         src="ovl.png"
         alt=""
-        onClick={handleScrollToSection}
       />
       <div className="max-h-[600px] dm:px-4 max-w-3xl right-0 pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center dm:items-start content-center w-sm dm:w-1/2 flex dm:right-0">
         <h1 className="absolute dm:w-screen dm:right-10 top-0 flex justify-center dm:justify-end font-bold text-xl dm:text-3xl xl:text-5xl">
@@ -24,7 +20,6 @@ const Overview = () => {
           className=" max-h-[370px] z-20 md:pl-10 justify-center mt-16 dm:mt-20 dm:mr-10 dm:max-h-screen min-h-[300px]  lg:pl-4 dm:pl-10 cm:pl-1 dm:min-h-[400px] dm:min-w-[500px]"
           src="location.png"
           alt=""
-          onClick={handleScrollToSection}
         />
       </div>
       <div

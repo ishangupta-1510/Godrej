@@ -3,9 +3,14 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const Amenities = () => {
-  const images = ["car.png", "baski2.png", "pool.png"];
-  const images2 = ["amph2.png", "baski.png", "swim.png"];
-  const names = ["AMPHITHEATRE", "BASKETBALL COURT", "SWIMMING POOL"];
+  const images = ["imt1.png", "imt2.png", "imt4.png", "imt3.png"];
+  const images2 = ["amph2.png", "swim.png", "parki.png", "baski.png"];
+  const names = [
+    "AMPHITHEATRE",
+    "Half Olympic size pool",
+    "SWIMMING POOL",
+    "KID'S PARK",
+  ];
 
   const [name, setName] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -28,20 +33,16 @@ const Amenities = () => {
 
   const currentImage = images[currentImageIndex];
   const currentName = names[name];
+
   return (
     <div id="Amenities">
-      <img
-        className="absolute z-0 hidden xl:block max-h-[280px] left-20 xl:top-[3860px] 2xl:top-[3900px]"
-        src="sun1.png"
-        alt=""
-      />
       <div className="sm:hidden relative">
         <div className="text-center items-center">
           <h1 className="text-xl py-10 lg:text-4xl font-bold text-gray-700">
             Amenities
           </h1>
         </div>
-        <div className="transition pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center xl:justify-center brightness-50  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
+        <div className="transition pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center xl:justify-center   content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
           <KeyboardArrowUpIcon
             className="relative left-3"
             onClick={() =>
@@ -51,15 +52,15 @@ const Amenities = () => {
               )
             }
           />
-          <img className="pl-3" src={currentImage} alt="" />
+          <img className="pl-5 pr-5 brightness-50" src={currentImage} alt="" />
           <div className="absolute ml-7 w-[90%] inset-0 flex items-center justify-center brightness-100 opacity-100 transition duration-500 ease-in-out">
             <img
-              className="w-14 transition duration-1000 ease-in-out transform"
+              className="w-14 transition duration-1000 ease-in-out transform "
               src={images2[currentImageIndex]}
               alt=""
               onLoad={handleImageLoad}
             />
-            <h1 className="text-white pl-3 text-sm xl:text-3xl font-bold">
+            <h1 className="text-white pl-3 text-sm xl:text-3xl ">
               {currentName}
             </h1>
           </div>
@@ -80,11 +81,16 @@ const Amenities = () => {
           <div className="transition duration-1000 ease-in-out transform  w-92 mr-4">
             <img
               position="relative"
-              src="amph1.png"
+              src="amp1.png"
               alt="image 1"
               width={350}
               height={300}
-              className="rounded-md brightness-50 hover:brightness-100"
+              className="rounded-md brightness-50 z-10 hover:brightness-100"
+            />
+            <img
+              className="absolute z-0 hidden xl:block top-0 left-20"
+              src="sun1.png"
+              alt=""
             />
             <div className="absolute brightness-90 pl-5 pr-5 inset-0 flex hover:opacity-0 justify-center items-center opacity-100 transition duration-500 ease-in-out">
               <img
@@ -95,6 +101,7 @@ const Amenities = () => {
               <h1 className="text-white  text-sm xl:text-2xl">Amphitheater</h1>
             </div>
           </div>
+
           <div className="transition  duration-1000  ease-in-out transform  w-92 mr-4">
             <img
               position="relative"
@@ -122,7 +129,7 @@ const Amenities = () => {
               alt="image 1"
               width={350}
               height={300}
-              className="rounded-md brightness-50 hover:brightness-100"
+              className="rounded-md brightness-75 hover:brightness-100"
             />
             <div className="absolute brightness-90 inset-0 flex hover:opacity-0 justify-center items-center opacity-100 transition duration-500 ease-in-out">
               <img
@@ -136,7 +143,7 @@ const Amenities = () => {
             </div>
           </div>
           <img
-            className="absolute z-0 hidden xl:block max-h-[280px] right-24 top-[3720px]"
+            className="absolute z-0 hidden xl:block max-h-[280px] right-24 top-[3520px]"
             src="sun0.png"
             alt=""
           />
