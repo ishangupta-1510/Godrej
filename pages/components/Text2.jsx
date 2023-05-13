@@ -22,15 +22,16 @@ const VerticalCarousel = () => {
   };
 
   return (
-    <Carousel
-      value={images}
-      itemTemplate={itemTemplate}
-      numVisible={1}
-      numScroll={1}
-      circular={true}
-      orientation="vertical"
-      verticalViewPortHeight="379px"
-    />
+    // <Carousel
+    //   value={images}
+    //   itemTemplate={itemTemplate}
+    //   numVisible={1}
+    //   numScroll={1}
+    //   circular={true}
+    //   orientation="vertical"
+    //   verticalViewPortHeight="379px"
+    // />
+    <h1>hello</h1>
   );
 };
 

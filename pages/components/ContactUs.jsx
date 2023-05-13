@@ -62,7 +62,7 @@ function ContactUs() {
                   type="radio"
                   className="bg-[#F0F0F0] text-orange-400 outline-none focus:ring-transparent rounded-full border-white p-3"
                 />
-                <label for="yes">Yes</label>
+                <label>Yes</label>
               </div>
               <div className="flex gap-2">
                 <input
@@ -71,7 +71,7 @@ function ContactUs() {
                   type="radio"
                   className="bg-[#F0F0F0] text-orange-400 outline-none focus:ring-transparent rounded-full border-white p-3"
                 />
-                <label for="no">No</label>
+                <label>No</label>
               </div>
             </div>
           </div>

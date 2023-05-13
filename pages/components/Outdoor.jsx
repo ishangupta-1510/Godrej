@@ -38,7 +38,7 @@ const Outdoor = () => {
       </div>
       <div className="hidden sm:block">
         <div
-          class="flex flex-col items-center my-16 gap-16 max-sm:h-[80vh] relative"
+          className="flex flex-col items-center my-16 gap-16 max-sm:h-[80vh] relative"
           id="gallery"
         >
           <div class="capitalize text-4xl font-bold flex justify-start w-5/6 items-center max-sm:justify-center max-sm:text-center">
@@ -49,10 +49,10 @@ const Outdoor = () => {
             src="sun2.png"
             alt=""
           />
-          <div class="hidden max-sm:flex bg-white opacity-80 p-3 rounded-full aspect-square px-5 absolute top-2/4 right-6 z-10">
-            <img class="w-[25px]" src="/arrow.svg" alt="" />
+          <div className="hidden max-sm:flex bg-white opacity-80 p-3 rounded-full aspect-square px-5 absolute top-2/4 right-6 z-10">
+            <img className="w-[25px]" src="/arrow.svg" alt="" />
           </div>
-          <div class="w-5/6 grid grid-cols-3 gap-6 max-sm:flex max-sm:h-full max-sm:overflow-x-scroll max-sm:px-3">
+          <div className="w-5/6 grid grid-cols-3 gap-6 max-sm:flex max-sm:h-full max-sm:overflow-x-scroll max-sm:px-3">
             <img
               className="max-sm:w-full z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
               src="/expl1.png"
