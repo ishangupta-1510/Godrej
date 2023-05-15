@@ -80,3 +80,38 @@
 
 body {
 }
+
+/* .custom-carousel-content {
+  border: #df0000 1px solid;
+}
+
+.p-carousel-content {
+  border: #6a0dad 1px solid;
+} */
+
+/* .p-carousel-item {
+  border: #00ff00 1px solid;
+  position: relative;
+}
+
+.p-carousel-prev {
+  border: #ff0000 1px solid;
+  position: absolute;
+  margin-top: 100px;
+  right: 0;
+} */
+
+.p-carousel-vertical .p-carousel-container {
+  flex-direction: row !important;
+}
+.contentClassName {
+  border: #00ff00 1px solid;
+}
+
+.containerClassName {
+  border: #ff0000 1px solid;
+}
+
+.indicatorsContentClassName {
+  border: #0000ff 1px solid;
+}

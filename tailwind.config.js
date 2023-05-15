@@ -27,6 +27,7 @@ module.exports = {
         bm: "320px",
         cm: "800px",
         dm: "1044px",
+        em: "400px",
       },
       width: {
         sm: "100vw",

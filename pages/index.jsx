@@ -13,6 +13,8 @@ import TestSlide from "./components/Testslide";
 import Footer from "./components/Footer";
 import Test2 from "./components/Text2";
 import Slideshow from "./components/Testslide";
+import Test3 from "./components/Test3";
+import Test4 from "./components/Test4";
 export default function Home() {
   return (
     <div>
@@ -23,11 +25,31 @@ export default function Home() {
       <Location />
       <FloorPlan />
       {/* <Test2 /> */}
-      <Amenities />
-      <Outdoor />
+      {/* <Test3 /> */}
+      <Test2 />
+      {/* <Amenities /> */}
+      <Test4 />
+      {/* <Outdoor /> */}
       <Explore />
       <ContactUs />
       <Footer />
     </div>
   );
 }
+// const data = [
+//   {
+//     image: "imt1.png",
+//     title: "Pool",
+//     description: "A beautiful pool with a waterfall feature",
+//   },
+//   {
+//     image: "imt2.png",
+//     title: "Gym",
+//     description: "A state-of-the-art gym with all the latest equipment",
+//   },
+//   {
+//     image: "imt3.png",
+//     title: "Sauna",
+//     description: "A relaxing sauna to help you unwind after a long day",
+//   },
+// ];

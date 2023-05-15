@@ -42,7 +42,7 @@ const Amenities = () => {
             Amenities
           </h1>
         </div>
-        <div className="transition pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center xl:justify-center   content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
+        <div className="">
           <KeyboardArrowUpIcon
             className="relative left-3"
             onClick={() =>
@@ -76,8 +76,13 @@ const Amenities = () => {
         </div>
       </div>
       <div className="2xl:pl-40 xl:pl-32 xl:pr-24 2xl:pr-36 sm:pl-20 sm:pr-20 lg:pt-48 hidden sm:block">
-        `<h1 className="text-4xl font-bold mb-6 text-[#3F535E] ">Aminities</h1>`
+        `
+        <h1 className="text-2xl lg:text-4xl font-bold mb-6 text-[#3F535E] ">
+          Aminities
+        </h1>
+        `
         <div className="flex justify-between">
+          <img className="absolute z-0 hidden xl:block" src="sun1.png" alt="" />
           <div className="transition duration-1000 ease-in-out transform  w-92 mr-4">
             <img
               position="relative"
@@ -87,11 +92,7 @@ const Amenities = () => {
               height={300}
               className="rounded-md brightness-50 z-10 hover:brightness-100"
             />
-            <img
-              className="absolute z-0 hidden xl:block top-0 left-20"
-              src="sun1.png"
-              alt=""
-            />
+
             <div className="absolute brightness-90 pl-5 pr-5 inset-0 flex hover:opacity-0 justify-center items-center opacity-100 transition duration-500 ease-in-out">
               <img
                 src="amph2.png"

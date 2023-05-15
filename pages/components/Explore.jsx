@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
+import Carousel2 from "./Carousel2";
 const Explore = () => {
   const images = ["liv1.png", "liv2.png", "liv3.png", "liv4.png"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -18,22 +19,12 @@ const Explore = () => {
             Explore the Living Spaces
           </h1>
         </div>
-        <div className="transition pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center xl:justify-center brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
-          <img className="" src={currentImage} alt="" />
-          <div className="absolute w-[90%] inset-0 flex items-center justify-center brightness-100 opacity-100 transition duration-500 ease-in-out">
-            <ArrowCircleLeftIcon
-              className="text-white text-5xl opacity-60 mx-9 left-0 absolute top-1/2 transform -translate-y-1/2"
-              onClick={() =>
-                handleArrowClick((currentImageIndex + 1) % images.length)
-              }
-            />
-            <ArrowCircleRightIcon
-              className="text-white text-5xl opacity-60 absolute right-0 top-1/2 transform -translate-y-1/2"
-              onClick={() =>
-                handleArrowClick((currentImageIndex + 1) % images.length)
-              }
-            />
-          </div>
+        <div className="transition pr-14 pl-14 duration-1000 ease-in-out transform justify-center items-center xl:justify-center brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
+          <Carousel2>
+            {images.map((s) => (
+              <img src={s} alt="" />
+            ))}
+          </Carousel2>
         </div>
       </div>
       <div className="hidden sm:block">
