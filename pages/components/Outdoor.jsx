@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
+import Carousel2 from "./Carousel2";
+import Slider from "react-slick";
 const Outdoor = () => {
+  var settings = {
+    dots: true,
+    slidesToShow: 3,
+    rows: 2,
+  };
   const images = ["exp1.png", "exp2.png", "exp3.png", "exp4.png", "exp5.png"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const handleArrowClick = (index, name) => {
@@ -18,22 +25,32 @@ const Outdoor = () => {
             Explore the Outdoor Spaces
           </h1>
         </div>
-        <div className="transition pr-5 pl-5 duration-1000 ease-in-out transform justify-center items-center xl:justify-center brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
-          <img className="" src={currentImage} alt="" />
-          <div className="absolute w-[90%] inset-0 flex items-center justify-center brightness-100 opacity-100 transition duration-500 ease-in-out">
-            <ArrowCircleLeftIcon
-              className="text-white text-5xl opacity-60 mx-9 left-0 absolute top-1/2 transform -translate-y-1/2"
-              onClick={() =>
-                handleArrowClick((currentImageIndex + 1) % images.length)
-              }
-            />
-            <ArrowCircleRightIcon
-              className="text-white text-5xl opacity-60 absolute right-0 top-1/2 transform -translate-y-1/2"
-              onClick={() =>
-                handleArrowClick((currentImageIndex + 1) % images.length)
-              }
-            />
-          </div>
+        <div className="am:pt-5 z-30 pr-14 pl-14 justify-center items-center xl:justify-center brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
+          <img
+            className="absolute right-2 -top-16 em:h-96 em:-top-20 am:h-[500px] am:-top-24"
+            src="olt.png"
+            alt=""
+          />
+          <Carousel2>
+            {images.map((s) => (
+              <img className="" src={s} alt="" />
+            ))}
+          </Carousel2>
+          <img
+            className="absolute left-7 em:hidden -bottom-5 z-0"
+            src="v1.png"
+            alt=""
+          />
+          <img
+            className="absolute left-7 hidden em:block am:hidden -bottom-7 z-0"
+            src="v4.png"
+            alt=""
+          />
+          <img
+            className="absolute left-5 hidden am:block -bottom-9 z-0"
+            src="v3.png"
+            alt=""
+          />
         </div>
       </div>
       <div className="hidden sm:block">
@@ -49,41 +66,6 @@ const Outdoor = () => {
             src="sun2.png"
             alt=""
           />
-          <div className="hidden max-sm:flex bg-white opacity-80 p-3 rounded-full aspect-square px-5 absolute top-2/4 right-6 z-10">
-            <img className="w-[25px]" src="/arrow.svg" alt="" />
-          </div>
-          <div className="w-5/6 grid grid-cols-3 gap-6 max-sm:flex max-sm:h-full max-sm:overflow-x-scroll max-sm:px-3">
-            <img
-              className="max-sm:w-full z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
-              src="/expl1.png"
-              alt=""
-            />
-            <img
-              className="max-sm:w-full z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
-              src="/expl2.png"
-              alt=""
-            />
-            <img
-              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
-              src="/expl3.png"
-              alt=""
-            />
-            <img
-              className="max-sm:w-full z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
-              src="/expl4.png"
-              alt=""
-            />
-            <img
-              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
-              src="/expl5.png"
-              alt=""
-            />
-            <img
-              className="max-sm:w-full max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
-              src="/expl6.png"
-              alt=""
-            />
-          </div>
         </div>
       </div>
     </div>

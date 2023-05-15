@@ -19,7 +19,7 @@ const Outdoor = () => {
             Explore the Outdoor Spaces
           </h1>
         </div>
-        <div className="am:pt-5  pr-14 pl-14 justify-center items-center xl:justify-center brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
+        <div className="am:pt-5 z-30 pr-14 pl-14 justify-center items-center xl:justify-center brightness-100  content-center w-sm xl:w-1/2 flex xl:right-0 xl:h-full">
           <img
             className="absolute right-2 -top-16 em:h-96 em:-top-20 am:h-[500px] am:-top-24"
             src="olt.png"
@@ -27,9 +27,24 @@ const Outdoor = () => {
           />
           <Carousel2>
             {images.map((s) => (
-              <img src={s} alt="" />
+              <img className="" src={s} alt="" />
             ))}
           </Carousel2>
+          <img
+            className="absolute left-7 em:hidden -bottom-5 z-0"
+            src="v1.png"
+            alt=""
+          />
+          <img
+            className="absolute left-7 hidden em:block am:hidden -bottom-7 z-0"
+            src="v4.png"
+            alt=""
+          />
+          <img
+            className="absolute left-5 hidden am:block -bottom-9 z-0"
+            src="v3.png"
+            alt=""
+          />
         </div>
       </div>
       <div className="hidden sm:block">

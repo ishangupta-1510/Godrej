@@ -15,24 +15,24 @@ import Test2 from "./components/Text2";
 import Slideshow from "./components/Testslide";
 import Test3 from "./components/Test3";
 import Test4 from "./components/Test4";
+import Test5 from "./components/Test5";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Slideshow />
-      <Overview />
       <Entry />
       <Location />
-      <FloorPlan />
+      <FloorPlan /> */}
       {/* <Test2 /> */}
       {/* <Test3 /> */}
-      <Test2 />
       {/* <Amenities /> */}
-      <Test4 />
-      {/* <Outdoor /> */}
-      <Explore />
+      <Test5 />
+      {/* <Test4 /> */}
+      <Outdoor />
+      {/* <Explore />
       <ContactUs />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

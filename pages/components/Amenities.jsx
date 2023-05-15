@@ -38,7 +38,7 @@ const Amenities = () => {
     <div id="Amenities">
       <div className="sm:hidden relative">
         <div className="text-center items-center">
-          <h1 className="text-xl py-10 lg:text-4xl font-bold text-gray-700">
+          <h1 className="text-xl dm:text-4xl py-10  text-gray-700">
             Amenities
           </h1>
         </div>
@@ -77,9 +77,7 @@ const Amenities = () => {
       </div>
       <div className="2xl:pl-40 xl:pl-32 xl:pr-24 2xl:pr-36 sm:pl-20 sm:pr-20 lg:pt-48 hidden sm:block">
         `
-        <h1 className="text-2xl lg:text-4xl font-bold mb-6 text-[#3F535E] ">
-          Aminities
-        </h1>
+        <h1 className="text-xl dm:text-4xl  mb-6 text-[#3F535E] ">Aminities</h1>
         `
         <div className="flex justify-between">
           <img className="absolute z-0 hidden xl:block" src="sun1.png" alt="" />
