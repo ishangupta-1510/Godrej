@@ -7,7 +7,7 @@ function ContactUs() {
       id="ContactUs"
     >
       <div className="w-2/3 flex flex-col gap-12 max-md:w-full max-md:px-4">
-        <div className="capitalize text-3xl font-bold flex justify-start items-center">
+        <div className="capitalize text-xl dm:text-4xl font-bold flex justify-start items-center">
           Contact us
         </div>
         <form className="grid grid-cols-2 gap-6 max-md:flex max-md:flex-col">
