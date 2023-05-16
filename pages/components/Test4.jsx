@@ -3,6 +3,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import Carousel2 from "./Carousel2";
+import Slider from "react-slick";
 const Outdoor = () => {
   const images = ["exp1.png", "exp2.png", "exp3.png", "exp4.png", "exp5.png"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
