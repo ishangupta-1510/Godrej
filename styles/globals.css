@@ -15,17 +15,28 @@
   background-size: cover;
 }
 
-/* .arrow {
-  position: relative;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid white;
-  margin-right: 10px;
-} */
-
+.slick-prev,
+.slick-next {
+  color: black !important;
+  display: hidden !important;
+}
+.prev {
+  left: -25px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
 :root {
 }
 

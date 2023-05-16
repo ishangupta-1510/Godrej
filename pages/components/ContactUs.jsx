@@ -2,7 +2,10 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <div className="flex  flex-col items-center my-16 w-full" id="ContactUs">
+    <div
+      className="flex  flex-col items-center my-16 2xl:my-60 w-full"
+      id="ContactUs"
+    >
       <div className="w-2/3 flex flex-col gap-12 max-md:w-full max-md:px-4">
         <div className="capitalize text-3xl font-bold flex justify-start items-center">
           Contact us

@@ -18,7 +18,7 @@ const FloorPlan = () => {
         }}
       >
         <img
-          className="absolute hidden dm:block max-h-[680px] top-0"
+          className="absolute hidden sm:block sm:max-h-[400px] dm:max-h-[680px] top-0"
           src="hfovl.png"
           alt=""
         />
