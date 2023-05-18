@@ -33,39 +33,60 @@ const Amenities = () => {
             Amenities
           </h1>
           <Slider className="" {...settings}>
-            <div className="relative max-sm:w-full  brightness-50 hover:brightness-100 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl">
-              <img className="" src="/imt1.png" alt="" />
-              <div className="absolute z-30">
-                <img className="" src="amph2.png" alt="" />
+            <div className="relative !flex items-center justify-center">
+              <img
+                className="max-sm:w-full p-12 opacity-70 hover:opacity-100 brightness-50 hover:brightness-100 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                src="/imt1.png"
+                alt=""
+              />
+              <div className="absolute hover:opacity-0 justify-center text-center items-center flex z-30 top-0 transition duration-500 ease-in-out">
+                <img
+                  className="w-10 transition duration-1000 ease-in-out transform"
+                  src="amph2.png"
+                  alt=""
+                />
+                <h1 className="text-white pl-5">AMPHITHEATRE</h1>
               </div>
             </div>
-            {/* <div className="max-sm:w-full p-12 brightness-50 hover:brightness-100 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl">
-              <img className="" src="/imt2.png" alt="" />
-              <div className="absolute z-30">
+            <div>
+              <img
+                className="max-sm:w-full p-12 brightness-50 hover:brightness-100 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                src="/imt2.png"
+                alt=""
+              />
+              <div className="absolute top-5">
                 <img className="" src="amph2.png" alt="" />
                 {/* <h1 className="text-white pl-3 text-sm xl:text-3xl ">
                   "AMPHITHEATRE"
-                </h1> 
+                </h1> */}
               </div>
             </div>
-            <div className="max-sm:w-full p-12 brightness-50 hover:brightness-100 max-sm:h-full max-sm:object-cover max-sm:rounded-xl">
-              <img className="" src="/imt3.png" alt="" />
-              <div className="absolute z-30">
+            <div>
+              <img
+                className="max-sm:w-full p-12 brightness-50 hover:brightness-100 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                src="/imt3.png"
+                alt=""
+              />
+              <div className="absolute top-5">
                 <img className="" src="amph2.png" alt="" />
                 {/* <h1 className="text-white pl-3 text-sm xl:text-3xl ">
                   "AMPHITHEATRE"
-                </h1> 
+                </h1> */}
               </div>
             </div>
-            <div className="max-sm:w-full p-12 brightness-50 hover:brightness-100 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl">
-              <img className="" src="/imt4.png" alt="" />
-              <div className="absolute z-30">
+            <div>
+              <img
+                className="max-sm:w-full p-12 brightness-50 hover:brightness-100 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                src="/imt4.png"
+                alt=""
+              />
+              <div className="absolute top-5">
                 <img className="" src="amph2.png" alt="" />
                 {/* <h1 className="text-white pl-3 text-sm xl:text-3xl ">
                   "AMPHITHEATRE"
-                </h1> 
+                </h1> */}
               </div>
-            </div> */}
+            </div>
           </Slider>
         </div>
       </div>

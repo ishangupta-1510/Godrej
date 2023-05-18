@@ -25,7 +25,7 @@ export default function Home() {
       <Entry />
       <Location />
       <FloorPlan />
-      {/* <Test2 /> */}
+      <Test4 />
       {/* <Amenities /> */}
       <Outdoor />
       <Explore />
