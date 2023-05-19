@@ -59,7 +59,7 @@ const Outdoor = () => {
           className="flex flex-col items-center my-16 gap-16 relative"
           id="gallery"
         >
-          <div class="capitalize text-xl dm:text-4xl dm:pt-0 font-bold flex justify-start w-5/6 items-center max-sm:justify-center max-sm:text-center">
+          <div class="text-xl dm:text-4xl font-bold flex justify-start w-5/6 items-center max-sm:justify-center max-sm:text-center">
             Explore The Living Spaces
           </div>
           <img
