@@ -76,49 +76,49 @@ const Outdoor = () => {
             <Slider {...settings}>
               <div>
                 <img
-                  className="max-sm:w-full p-2 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                  className="max-sm:w-full p-2 z-10 max-sm:h-full max-h-[450px] max-sm:object-cover max-sm:rounded-xl"
                   src="/livl1.png"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="max-sm:w-full p-2 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                  className="max-sm:w-full p-2 z-10 max-sm:h-full max-h-[450px] max-sm:object-cover max-sm:rounded-xl"
                   src="/livl2.png"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="max-sm:w-full p-2 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                  className="max-sm:w-full p-2 max-sm:h-full max-h-[450px] max-sm:object-cover max-sm:rounded-xl"
                   src="/livl3.png"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="max-sm:w-full p-2 z-10 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                  className="max-sm:w-full p-2 z-10 max-sm:h-full max-h-[450px] max-sm:object-cover max-sm:rounded-xl"
                   src="/livl4.png"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="max-sm:w-full p-5 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                  className="max-sm:w-full p-5 max-sm:h-full max-h-[450px] max-sm:object-cover max-sm:rounded-xl"
                   src="/expl5.png"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="max-sm:w-full p-5 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                  className="max-sm:w-full p-5 max-sm:h-full max-h-[450px] max-sm:object-cover max-sm:rounded-xl"
                   src="/expl6.png"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="max-sm:w-full p-5 max-sm:h-full max-sm:object-cover max-sm:rounded-xl"
+                  className="max-sm:w-full p-5 max-sm:h-full max-h-[450px] max-sm:object-cover max-sm:rounded-xl"
                   src="/expl6.png"
                   alt=""
                 />

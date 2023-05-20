@@ -88,7 +88,7 @@ const Amenities = () => {
         </h1>
         `
         <div className="flex justify-between">
-          <img className="absolute z-0 hidden xl:block" src="sun1.png" alt="" />
+          {/* <img className="absolute z-0 hidden xl:block" src="sun1.png" alt="" /> */}
           <div className="transition duration-1000 ease-in-out transform  w-92 mr-4">
             <img
               position="relative"

@@ -16,9 +16,13 @@ import Slideshow from "./components/HomePage";
 import Test3 from "./components/Test3";
 import Test4 from "./components/Test4";
 import Test5 from "./components/Test5";
+import Float from "./components/Floting_Components";
+import ContactUs_float from "./components/ContactUs_float";
 export default function Home() {
   return (
     <div>
+      <Float />
+      <ContactUs_float />
       <Navbar />
       <Slideshow />
       <Overview />
