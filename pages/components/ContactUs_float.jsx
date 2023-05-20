@@ -1,16 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const ContactUsFloat = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const handleButtonClick = () => {
     setShow(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollThreshold = 200; // Adjust this value as needed
+      const contactUsContainer = document.getElementById("contactUsContainer");
+      const scrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollPosition > scrollThreshold) {
+        setShow(true);
+        contactUsContainer.style.opacity = "1";
+        contactUsContainer.style.pointerEvents = "auto";
+      } else {
+        setShow(false);
+        contactUsContainer.style.opacity = "0";
+        contactUsContainer.style.pointerEvents = "none";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
+    <div id="contactUsContainer">
       <div
         className={
           show

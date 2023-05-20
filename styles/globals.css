@@ -6,6 +6,11 @@
   transition: ease 1000ms;
 }
 
+#contactUsContainer {
+  opacity: 0;
+  pointer-events: none;
+}
+
 @keyframes shake-once {
   0% {
     transform: rotate(0deg);
