@@ -4,9 +4,10 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const ContactUsFloat = () => {
   const [show, setShow] = useState(false);
-
+  const [displayed, setDisplayed] = useState(false);
   const handleButtonClick = () => {
     setShow(false);
+    setDisplayed(true);
   };
 
   useEffect(() => {
@@ -15,16 +16,16 @@ const ContactUsFloat = () => {
       const contactUsContainer = document.getElementById("contactUsContainer");
       const scrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
-
-      if (scrollPosition > scrollThreshold) {
+      if (scrollPosition > scrollThreshold && !displayed) {
         setShow(true);
         contactUsContainer.style.opacity = "1";
         contactUsContainer.style.pointerEvents = "auto";
-      } else {
-        setShow(false);
-        contactUsContainer.style.opacity = "0";
-        contactUsContainer.style.pointerEvents = "none";
       }
+      // else {
+      //   setShow(false);
+      //   contactUsContainer.style.opacity = "0";
+      //   contactUsContainer.style.pointerEvents = "none";ss
+      // }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -34,7 +35,7 @@ const ContactUsFloat = () => {
     };
   }, []);
 
-  return (
+  return show && !displayed ? (
     <div id="contactUsContainer">
       <div
         className={
@@ -96,6 +97,8 @@ const ContactUsFloat = () => {
         </div>
       </div>
     </div>
+  ) : (
+    <div id="contactUsContainer"></div>
   );
 };
 
